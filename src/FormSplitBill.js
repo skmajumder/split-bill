@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import Button from "./Button";
 
 const FormSplitBill = ({ selectedFriend, onSplitBill }) => {
-  const { id, name, balance } = selectedFriend || {};
+  const { name } = selectedFriend || {};
+
+  console.log(selectedFriend);
 
   const [bill, setBill] = useState("");
   const [paidByUser, setPaidByUser] = useState("");
